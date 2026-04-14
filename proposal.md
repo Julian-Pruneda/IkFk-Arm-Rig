@@ -1,7 +1,7 @@
 # Title
 IkFk Arm Rig
 ## Repository
-<Link to your project's public GitHub respository>
+https://github.com/Julian-Pruneda/IkFk-Arm-Rig.git
 
 ## Description
 Will take a 3 joint chain that is named Shoulder, Elbow, and Wrist and create an rig with an Ik and an Fk switch. This will make creating arm rigs easier in the future.
