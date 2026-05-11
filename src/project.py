@@ -42,6 +42,16 @@ def ik_arm():
     cmds.poleVectorConstraint(pv_con, ikh[0])
     cmds.orientConstraint(arm_con, wrist, maintainOffset=True)
 
+def duplicate_chain(chain_type):
+    sel = cmds.ls(sl=True)
+    duplicate = cmds.duplicate(sel[0], rc=True)
+
+    for jnt in duplicate:
+        cmds.rename(jnt, jnt.replace('JNT1', chain_type + '_JNT'))
+
+    return duplicate
+    
+
 def main():
     fk_arm()
 
