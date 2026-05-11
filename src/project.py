@@ -97,3 +97,5 @@ def main():
     ik_control, ikh = ik_arm()
 
     create_ikfk_switch(bind_chain, fk_chain, ik_chain, fk_controls, ik_control)
+    cmds.delete(original_chain)
+    cmds.hide(fk_chain, ik_chain)
